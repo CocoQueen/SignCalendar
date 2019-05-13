@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements GridView.OnItemCl
         // 获取当前年份
         mYear = calendar.get(Calendar.YEAR);
         // 获取当前月份以（0开头）
-        mMonth = calendar.get(Calendar.MONTH) + 1;
+        mMonth = calendar.get(Calendar.MONTH) -1;
         // 获取当前天以（0开头）
         mDay = calendar.get(Calendar.DATE);
 

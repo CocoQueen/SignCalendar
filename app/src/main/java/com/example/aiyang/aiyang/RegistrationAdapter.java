@@ -66,7 +66,7 @@ public class RegistrationAdapter extends BaseAdapter {
         } else {
             viewHolder = (ViewHolder) view.getTag();
         }
-        viewHolder.day.setText(dayNumber[i] == 0 ? "" : dayNumber[i] + "");
+        viewHolder.day.setText(dayNumber[i] <=0 ? "" : dayNumber[i] + "");
         //奇数天设置签到
         if (dayNumber[i] != 0 && dayNumber[i] < day && dayNumber[i] % 2 == 1) {
             viewHolder.day.setBackgroundResource(R.mipmap.member_ok);
